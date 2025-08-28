@@ -50,7 +50,7 @@ export default function Navigation() {
               className="bg-red-800 hover:bg-red-700 text-white transition-all duration-300 hover:scale-105"
             >
               <Link
-                href="tel:+92XXXXXXXXX"
+                href="tel:+923315998002"
                 className="flex items-center space-x-2"
               >
                 <Phone className="w-4 h-4" />
@@ -101,7 +101,7 @@ export default function Navigation() {
                   className="w-full bg-red-800 hover:bg-red-700 text-white"
                 >
                   <Link
-                    href="tel:+92XXXXXXXXX"
+                    href="tel:+923315998002"
                     className="flex items-center justify-center space-x-2"
                   >
                     <Phone className="w-4 h-4" />
