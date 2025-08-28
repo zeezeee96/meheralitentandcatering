@@ -1,7 +1,7 @@
-import Link from "next/link"
-import { Button } from "@/components/ui/button"
-import { Card, CardContent } from "@/components/ui/card"
-import { Phone, MapPin, Mail, Star } from "lucide-react"
+import Link from "next/link";
+import { Button } from "@/components/ui/button";
+import { Card, CardContent } from "@/components/ui/card";
+import { Phone, MapPin, Mail, Star } from "lucide-react";
 
 export default function HomePage() {
   return (
@@ -21,10 +21,13 @@ export default function HomePage() {
           <h1 className="text-5xl md:text-7xl font-bold mb-6 text-shadow-lg">
             <span className="text-amber-300">Meher Ali</span>
             <br />
-            <span className="text-2xl md:text-4xl font-medium">Tent & Pakwan Center</span>
+            <span className="text-2xl md:text-4xl font-medium">
+              Tent & Pakwan Center
+            </span>
           </h1>
           <p className="text-xl md:text-2xl mb-8 text-amber-100 max-w-2xl mx-auto leading-relaxed">
-            Complete catering services for weddings, events, and all kinds of gatherings in Chakwal
+            Complete catering services for weddings, events, and all kinds of
+            gatherings in Chakwal
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button
@@ -49,16 +52,20 @@ export default function HomePage() {
       {/* Quick Services Overview */}
       <section className="py-20 px-4">
         <div className="max-w-6xl mx-auto">
-          <h2 className="text-4xl font-bold text-center text-maroon-800 mb-4">Complete Event Solutions</h2>
+          <h2 className="text-4xl font-bold text-center text-maroon-800 mb-4">
+            Complete Event Solutions
+          </h2>
           <p className="text-center text-gray-600 mb-12 text-lg max-w-2xl mx-auto">
-            From intimate gatherings to grand celebrations, we provide everything you need for memorable events
+            From intimate gatherings to grand celebrations, we provide
+            everything you need for memorable events
           </p>
 
           <div className="grid md:grid-cols-3 gap-8">
             {[
               {
                 title: "Professional Catering",
-                description: "Authentic Pakistani cuisine prepared by expert chefs",
+                description:
+                  "Authentic Pakistani cuisine prepared by expert chefs",
                 icon: "🍽️",
               },
               {
@@ -68,7 +75,8 @@ export default function HomePage() {
               },
               {
                 title: "Event Decoration",
-                description: "Beautiful decorations for weddings and special occasions",
+                description:
+                  "Beautiful decorations for weddings and special occasions",
                 icon: "🎊",
               },
             ].map((service, index) => (
@@ -83,7 +91,9 @@ export default function HomePage() {
                   <h3 className="text-xl font-bold text-maroon-800 mb-3 group-hover:text-amber-600 transition-colors duration-300">
                     {service.title}
                   </h3>
-                  <p className="text-gray-600 leading-relaxed">{service.description}</p>
+                  <p className="text-gray-600 leading-relaxed">
+                    {service.description}
+                  </p>
                 </CardContent>
               </Card>
             ))}
@@ -95,9 +105,12 @@ export default function HomePage() {
       <section className="py-20 bg-gradient-to-b from-white to-gray-50">
         <div className="max-w-7xl mx-auto px-4">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-maroon-800 mb-4">Our Recent Projects</h2>
+            <h2 className="text-4xl font-bold text-maroon-800 mb-4">
+              Our Recent Projects
+            </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Take a look at some of our beautifully executed events and celebrations
+              Take a look at some of our beautifully executed events and
+              celebrations
             </p>
           </div>
 
@@ -105,37 +118,43 @@ export default function HomePage() {
             {[
               {
                 title: "Grand Wedding Ceremony",
-                description: "Complete wedding setup for 500+ guests with traditional Pakistani decor",
+                description:
+                  "Complete wedding setup for 500+ guests with traditional Pakistani decor",
                 image: "/wedding-project-1.png",
                 category: "Wedding",
               },
               {
                 title: "Corporate Event",
-                description: "Professional catering and setup for corporate annual dinner",
+                description:
+                  "Professional catering and setup for corporate annual dinner",
                 image: "/corporate-event-1.png",
                 category: "Corporate",
               },
               {
                 title: "Mehndi Celebration",
-                description: "Colorful mehndi setup with traditional decorations and seating",
+                description:
+                  "Colorful mehndi setup with traditional decorations and seating",
                 image: "/mehndi-project-1.png",
                 category: "Mehndi",
               },
               {
                 title: "Walima Reception",
-                description: "Elegant walima reception with gold and white theme",
+                description:
+                  "Elegant walima reception with gold and white theme",
                 image: "/walima-project-1.png",
                 category: "Walima",
               },
               {
                 title: "Birthday Celebration",
-                description: "Fun and colorful birthday party setup for family gathering",
+                description:
+                  "Fun and colorful birthday party setup for family gathering",
                 image: "/birthday-project-1.png",
                 category: "Birthday",
               },
               {
                 title: "Religious Ceremony",
-                description: "Traditional setup for religious gathering with proper arrangements",
+                description:
+                  "Traditional setup for religious gathering with proper arrangements",
                 image: "/religious-project-1.png",
                 category: "Religious",
               },
@@ -163,7 +182,9 @@ export default function HomePage() {
                   <h3 className="text-xl font-bold mb-2 group-hover:text-amber-300 transition-colors duration-300">
                     {project.title}
                   </h3>
-                  <p className="text-amber-100 text-sm leading-relaxed">{project.description}</p>
+                  <p className="text-amber-100 text-sm leading-relaxed">
+                    {project.description}
+                  </p>
                 </div>
               </div>
             ))}
@@ -184,14 +205,32 @@ export default function HomePage() {
       {/* Why Choose Us */}
       <section className="py-20 bg-gradient-to-br from-gray-100 via-amber-50 to-gray-100">
         <div className="max-w-6xl mx-auto px-4">
-          <h2 className="text-4xl font-bold text-center text-maroon-800 mb-12">Why Choose Meher Ali?</h2>
+          <h2 className="text-4xl font-bold text-center text-maroon-800 mb-12">
+            Why Choose Meher Ali?
+          </h2>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
             {[
-              { icon: Star, title: "15+ Years Experience", desc: "Trusted by families across Chakwal" },
-              { icon: Phone, title: "24/7 Support", desc: "Always available for your events" },
-              { icon: MapPin, title: "Local Expertise", desc: "Deep understanding of local preferences" },
-              { icon: Mail, title: "Custom Solutions", desc: "Tailored services for every occasion" },
+              {
+                icon: Star,
+                title: "15+ Years Experience",
+                desc: "Trusted by families across Chakwal",
+              },
+              {
+                icon: Phone,
+                title: "24/7 Support",
+                desc: "Always available for your events",
+              },
+              {
+                icon: MapPin,
+                title: "Local Expertise",
+                desc: "Deep understanding of local preferences",
+              },
+              {
+                icon: Mail,
+                title: "Custom Solutions",
+                desc: "Tailored services for every occasion",
+              },
             ].map((item, index) => (
               <Card
                 key={index}
@@ -209,14 +248,16 @@ export default function HomePage() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 bg-gradient-to-r from-maroon-900 via-maroon-800 to-maroon-900 text-white relative overflow-hidden">
+      <section className="py-20 bg-gradient-to-r from-red-900 via-red-600 to-red-900 text-white relative overflow-hidden">
         {/* Background pattern for visual interest */}
         <div className="absolute inset-0 opacity-10">
           <div className="absolute inset-0 bg-gradient-to-br from-amber-500/20 to-transparent"></div>
         </div>
 
         <div className="relative z-10 max-w-4xl mx-auto text-center px-4">
-          <h2 className="text-4xl md:text-5xl font-bold mb-6 text-white">Ready to Plan Your Perfect Event?</h2>
+          <h2 className="text-4xl md:text-5xl font-bold mb-6 text-white">
+            Ready to Plan Your Perfect Event?
+          </h2>
           <p className="text-xl md:text-2xl mb-8 text-amber-100 max-w-2xl mx-auto leading-relaxed">
             Contact us today for a free consultation and quote
           </p>
@@ -230,5 +271,5 @@ export default function HomePage() {
         </div>
       </section>
     </div>
-  )
+  );
 }
