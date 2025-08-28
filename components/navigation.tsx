@@ -1,21 +1,21 @@
-"use client"
+"use client";
 
-import { useState } from "react"
-import Link from "next/link"
-import { usePathname } from "next/navigation"
-import { Button } from "@/components/ui/button"
-import { Menu, X, Phone } from "lucide-react"
+import { useState } from "react";
+import Link from "next/link";
+import { usePathname } from "next/navigation";
+import { Button } from "@/components/ui/button";
+import { Menu, X, Phone } from "lucide-react";
 
 export default function Navigation() {
-  const [isOpen, setIsOpen] = useState(false)
-  const pathname = usePathname()
+  const [isOpen, setIsOpen] = useState(false);
+  const pathname = usePathname();
 
   const navigation = [
     { name: "Home", href: "/" },
     { name: "Services", href: "/services" },
     { name: "About Us", href: "/about" },
     { name: "Contact", href: "/contact" },
-  ]
+  ];
 
   return (
     <nav className="fixed top-0 w-full bg-white/95 backdrop-blur-sm shadow-lg z-50 border-b border-amber-200">
@@ -23,7 +23,7 @@ export default function Navigation() {
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
           <Link href="/" className="flex items-center space-x-2 group">
-            <div className="text-2xl font-bold text-maroon-800 group-hover:text-amber-600 transition-colors duration-300">
+            <div className="text-2xl font-bold text-red-800 group-hover:text-amber-600 transition-colors duration-300">
               Meher Ali
             </div>
             <div className="text-sm text-gray-600">Tent & Pakwan</div>
@@ -36,7 +36,9 @@ export default function Navigation() {
                 key={item.name}
                 href={item.href}
                 className={`px-3 py-2 text-sm font-medium transition-all duration-300 hover:text-amber-600 hover:scale-105 ${
-                  pathname === item.href ? "text-amber-600 border-b-2 border-amber-600" : "text-maroon-800"
+                  pathname === item.href
+                    ? "text-amber-600 border-b-2 border-amber-600"
+                    : "text-red-800"
                 }`}
               >
                 {item.name}
@@ -45,9 +47,12 @@ export default function Navigation() {
             <Button
               asChild
               size="sm"
-              className="bg-maroon-800 hover:bg-maroon-700 text-white transition-all duration-300 hover:scale-105"
+              className="bg-red-800 hover:bg-red-700 text-white transition-all duration-300 hover:scale-105"
             >
-              <Link href="tel:+92XXXXXXXXX" className="flex items-center space-x-2">
+              <Link
+                href="tel:+92XXXXXXXXX"
+                className="flex items-center space-x-2"
+              >
                 <Phone className="w-4 h-4" />
                 <span>Call Now</span>
               </Link>
@@ -60,9 +65,13 @@ export default function Navigation() {
               variant="ghost"
               size="sm"
               onClick={() => setIsOpen(!isOpen)}
-              className="text-maroon-800 hover:text-amber-600"
+              className="text-red-800 hover:text-amber-600"
             >
-              {isOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
+              {isOpen ? (
+                <X className="w-6 h-6" />
+              ) : (
+                <Menu className="w-6 h-6" />
+              )}
             </Button>
           </div>
         </div>
@@ -76,7 +85,9 @@ export default function Navigation() {
                   key={item.name}
                   href={item.href}
                   className={`block px-3 py-2 text-base font-medium transition-all duration-300 hover:text-amber-600 hover:bg-amber-50 rounded-md ${
-                    pathname === item.href ? "text-amber-600 bg-amber-50" : "text-maroon-800"
+                    pathname === item.href
+                      ? "text-amber-600 bg-amber-50"
+                      : "text-red-800"
                   }`}
                   onClick={() => setIsOpen(false)}
                 >
@@ -84,8 +95,15 @@ export default function Navigation() {
                 </Link>
               ))}
               <div className="px-3 py-2">
-                <Button asChild size="sm" className="w-full bg-maroon-800 hover:bg-maroon-700 text-white">
-                  <Link href="tel:+92XXXXXXXXX" className="flex items-center justify-center space-x-2">
+                <Button
+                  asChild
+                  size="sm"
+                  className="w-full bg-red-800 hover:bg-red-700 text-white"
+                >
+                  <Link
+                    href="tel:+92XXXXXXXXX"
+                    className="flex items-center justify-center space-x-2"
+                  >
                     <Phone className="w-4 h-4" />
                     <span>Call Now</span>
                   </Link>
@@ -96,5 +114,5 @@ export default function Navigation() {
         )}
       </div>
     </nav>
-  )
+  );
 }

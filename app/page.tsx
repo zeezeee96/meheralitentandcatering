@@ -14,7 +14,7 @@ export default function HomePage() {
             backgroundImage: `url('/pakistani-wedding-setup.png')`,
           }}
         >
-          <div className="absolute inset-0 bg-gradient-to-r from-black/70 via-maroon-900/60 to-black/40"></div>
+          <div className="absolute inset-0 bg-gradient-to-r from-black/70 via-red-900/60 to-black/40"></div>
         </div>
 
         <div className="relative z-10 text-center text-white px-4 max-w-4xl mx-auto">
@@ -33,7 +33,7 @@ export default function HomePage() {
             <Button
               asChild
               size="lg"
-              className="bg-amber-500 hover:bg-amber-600 text-maroon-900 font-semibold px-8 py-4 text-lg transition-all duration-300 hover:scale-105 hover:shadow-xl"
+              className="bg-amber-500 hover:bg-amber-600 text-red-900 font-semibold px-8 py-4 text-lg transition-all duration-300 hover:scale-105 hover:shadow-xl"
             >
               <Link href="/contact">Get in Touch</Link>
             </Button>
@@ -41,7 +41,7 @@ export default function HomePage() {
               asChild
               variant="outline"
               size="lg"
-              className="border-2 border-amber-300 text-amber-300 hover:bg-amber-300 hover:text-maroon-900 font-semibold px-8 py-4 text-lg transition-all duration-300 hover:scale-105 bg-transparent"
+              className="border-2 border-amber-300 text-amber-300 hover:bg-amber-300 hover:text-red-900 font-semibold px-8 py-4 text-lg transition-all duration-300 hover:scale-105 bg-transparent"
             >
               <Link href="/services">Our Services</Link>
             </Button>
@@ -52,7 +52,7 @@ export default function HomePage() {
       {/* Quick Services Overview */}
       <section className="py-20 px-4">
         <div className="max-w-6xl mx-auto">
-          <h2 className="text-4xl font-bold text-center text-maroon-800 mb-4">
+          <h2 className="text-4xl font-bold text-center text-red-800 mb-4">
             Complete Event Solutions
           </h2>
           <p className="text-center text-gray-600 mb-12 text-lg max-w-2xl mx-auto">
@@ -88,7 +88,7 @@ export default function HomePage() {
                   <div className="text-6xl mb-4 group-hover:scale-110 transition-transform duration-300">
                     {service.icon}
                   </div>
-                  <h3 className="text-xl font-bold text-maroon-800 mb-3 group-hover:text-amber-600 transition-colors duration-300">
+                  <h3 className="text-xl font-bold text-red-800 mb-3 group-hover:text-amber-600 transition-colors duration-300">
                     {service.title}
                   </h3>
                   <p className="text-gray-600 leading-relaxed">
@@ -105,7 +105,7 @@ export default function HomePage() {
       <section className="py-20 bg-gradient-to-b from-white to-gray-50">
         <div className="max-w-7xl mx-auto px-4">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-maroon-800 mb-4">
+            <h2 className="text-4xl font-bold text-red-800 mb-4">
               Our Recent Projects
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
@@ -175,7 +175,7 @@ export default function HomePage() {
 
                 <div className="absolute bottom-0 left-0 right-0 p-6 text-white">
                   <div className="mb-2">
-                    <span className="inline-block px-3 py-1 bg-amber-500 text-maroon-900 text-xs font-semibold rounded-full">
+                    <span className="inline-block px-3 py-1 bg-amber-500 text-red-900 text-xs font-semibold rounded-full">
                       {project.category}
                     </span>
                   </div>
@@ -194,7 +194,7 @@ export default function HomePage() {
             <Button
               asChild
               size="lg"
-              className="bg-maroon-800 hover:bg-maroon-700 text-white font-semibold px-8 py-4 text-lg transition-all duration-300 hover:scale-105 hover:shadow-xl"
+              className="bg-red-800 hover:bg-red-700 text-white font-semibold px-8 py-4 text-lg transition-all duration-300 hover:scale-105 hover:shadow-xl"
             >
               <Link href="/contact">Start Your Project</Link>
             </Button>
@@ -205,7 +205,7 @@ export default function HomePage() {
       {/* Why Choose Us */}
       <section className="py-20 bg-gradient-to-br from-gray-100 via-amber-50 to-gray-100">
         <div className="max-w-6xl mx-auto px-4">
-          <h2 className="text-4xl font-bold text-center text-maroon-800 mb-12">
+          <h2 className="text-4xl font-bold text-center text-red-800 mb-12">
             Why Choose Meher Ali?
           </h2>
 
@@ -236,8 +236,8 @@ export default function HomePage() {
                 key={index}
                 className="group text-center p-6 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border-0 bg-white shadow-md"
               >
-                <item.icon className="w-12 h-12 text-amber-600 mx-auto mb-4 group-hover:scale-110 group-hover:text-maroon-600 transition-all duration-300" />
-                <h3 className="font-bold text-maroon-800 mb-2 group-hover:text-amber-600 transition-colors duration-300">
+                <item.icon className="w-12 h-12 text-amber-600 mx-auto mb-4 group-hover:scale-110 group-hover:text-red-600 transition-all duration-300" />
+                <h3 className="font-bold text-red-800 mb-2 group-hover:text-amber-600 transition-colors duration-300">
                   {item.title}
                 </h3>
                 <p className="text-gray-700 text-sm">{item.desc}</p>
@@ -264,7 +264,7 @@ export default function HomePage() {
           <Button
             asChild
             size="lg"
-            className="bg-amber-500 hover:bg-amber-400 text-maroon-900 font-bold px-10 py-4 text-lg transition-all duration-300 hover:scale-105 hover:shadow-2xl border-2 border-amber-400"
+            className="bg-amber-500 hover:bg-amber-400 text-red-900 font-bold px-10 py-4 text-lg transition-all duration-300 hover:scale-105 hover:shadow-2xl border-2 border-amber-400"
           >
             <Link href="/contact">Get Free Quote</Link>
           </Button>

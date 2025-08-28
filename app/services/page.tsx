@@ -1,6 +1,6 @@
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
-import { Button } from "@/components/ui/button"
-import Link from "next/link"
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { Button } from "@/components/ui/button";
+import Link from "next/link";
 
 export default function ServicesPage() {
   const services = [
@@ -60,7 +60,13 @@ export default function ServicesPage() {
       title: "Event Decoration",
       description:
         "Beautiful decoration services to transform your venue into a magical space. Specializing in traditional Pakistani wedding decorations and modern event styling.",
-      features: ["Wedding decorations", "Floral arrangements", "Lighting setup", "Stage decoration", "Cultural themes"],
+      features: [
+        "Wedding decorations",
+        "Floral arrangements",
+        "Lighting setup",
+        "Stage decoration",
+        "Cultural themes",
+      ],
       image: "/pakistani-wedding-decor.png",
     },
     {
@@ -76,18 +82,19 @@ export default function ServicesPage() {
       ],
       image: "/placeholder-jo14l.png",
     },
-  ]
+  ];
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-amber-50 to-white">
       {/* Header */}
-      <section className="py-20 bg-gradient-to-r from-maroon-800 to-maroon-900 text-white">
+      <section className="py-20 bg-gradient-to-r from-red-800 to-red-900 text-white">
         <div className="max-w-6xl mx-auto px-4 text-center">
           <h1 className="text-5xl font-bold mb-6">
             Our <span className="text-amber-300">Services</span>
           </h1>
           <p className="text-xl text-amber-100 max-w-3xl mx-auto">
-            Complete catering and event solutions for all your special occasions in Chakwal and surrounding areas
+            Complete catering and event solutions for all your special occasions
+            in Chakwal and surrounding areas
           </p>
         </div>
       </section>
@@ -111,18 +118,25 @@ export default function ServicesPage() {
                   <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent"></div>
                 </div>
                 <CardHeader className="pb-4">
-                  <CardTitle className="text-2xl text-maroon-800 group-hover:text-amber-600 transition-colors duration-300">
+                  <CardTitle className="text-2xl text-red-800 group-hover:text-amber-600 transition-colors duration-300">
                     {service.title}
                   </CardTitle>
                 </CardHeader>
                 <CardContent className="pt-0">
-                  <p className="text-gray-600 mb-6 leading-relaxed">{service.description}</p>
+                  <p className="text-gray-600 mb-6 leading-relaxed">
+                    {service.description}
+                  </p>
                   <div className="space-y-2 mb-6">
-                    <h4 className="font-semibold text-maroon-700 mb-3">Key Features:</h4>
+                    <h4 className="font-semibold text-red-700 mb-3">
+                      Key Features:
+                    </h4>
                     <ul className="grid grid-cols-1 gap-2">
                       {service.features.map((feature, idx) => (
-                        <li key={idx} className="flex items-center text-sm text-gray-600">
-                          <span className="w-2 h-2 bg-amber-500 rounded-full mr-3 group-hover:bg-maroon-500 transition-colors duration-300"></span>
+                        <li
+                          key={idx}
+                          className="flex items-center text-sm text-gray-600"
+                        >
+                          <span className="w-2 h-2 bg-amber-500 rounded-full mr-3 group-hover:bg-red-500 transition-colors duration-300"></span>
                           {feature}
                         </li>
                       ))}
@@ -136,21 +150,24 @@ export default function ServicesPage() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 bg-gradient-to-r from-maroon-900 via-maroon-800 to-maroon-900 text-white">
+      <section className="py-20 bg-gradient-to-r from-red-900 via-red-800 to-red-900 text-white">
         <div className="max-w-4xl mx-auto text-center px-4">
-          <h2 className="text-4xl font-bold text-white mb-6">Need a Custom Package?</h2>
+          <h2 className="text-4xl font-bold text-white mb-6">
+            Need a Custom Package?
+          </h2>
           <p className="text-xl text-amber-100 mb-8 max-w-2xl mx-auto leading-relaxed">
-            We can combine any of our services to create the perfect package for your event
+            We can combine any of our services to create the perfect package for
+            your event
           </p>
           <Button
             asChild
             size="lg"
-            className="bg-amber-500 hover:bg-amber-400 text-maroon-900 font-bold px-10 py-4 text-lg transition-all duration-300 hover:scale-105 hover:shadow-xl border-2 border-amber-400"
+            className="bg-amber-500 hover:bg-amber-400 text-red-900 font-bold px-10 py-4 text-lg transition-all duration-300 hover:scale-105 hover:shadow-xl border-2 border-amber-400"
           >
             <Link href="/contact">Request Custom Quote</Link>
           </Button>
         </div>
       </section>
     </div>
-  )
+  );
 }
