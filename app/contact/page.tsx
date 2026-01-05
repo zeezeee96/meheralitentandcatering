@@ -68,7 +68,7 @@ export default function ContactPage() {
         </div>
       </section>
 
-      <section className="py-20 px-4">
+      <section className="py-20 px-6 lg:px-8">
         <div className="max-w-6xl mx-auto">
           <div className="grid lg:grid-cols-2 gap-12">
             {/* Contact Information */}
@@ -77,13 +77,13 @@ export default function ContactPage() {
                 <h2 className="text-3xl font-bold text-red-800 mb-6">
                   Get in Touch
                 </h2>
-                <p className="text-gray-600 text-lg leading-relaxed mb-8">
+                <p className="text-gray-600 text-md leading-relaxed mb-8">
                   We'd love to hear about your upcoming event. Contact us today
                   to discuss your requirements and get a personalized quote.
                 </p>
               </div>
 
-              <div className="space-y-6">
+              <div className="space-y-4">
                 {[
                   {
                     icon: MapPin,
@@ -94,7 +94,7 @@ export default function ContactPage() {
                   {
                     icon: Phone,
                     title: "Phone",
-                    info: "+92 XXX XXXXXXX",
+                    info: "+92 331 5998002",
                     subInfo: "Available 24/7 for emergencies",
                   },
                   {
@@ -112,9 +112,9 @@ export default function ContactPage() {
                 ].map((contact, index) => (
                   <Card
                     key={index}
-                    className="group p-6 hover:shadow-lg transition-all duration-300 hover:-translate-y-1 border-0 bg-gradient-to-r from-white to-amber-50"
+                    className="group px-6 py-4 hover:shadow-lg transition-all duration-300 hover:-translate-y-1 border-0 bg-gradient-to-r from-white to-amber-50"
                   >
-                    <div className="flex items-start space-x-4">
+                    <div className="flex items-center space-x-3">
                       <contact.icon className="w-8 h-8 text-amber-600 mt-1 group-hover:text-red-600 group-hover:scale-110 transition-all duration-300" />
                       <div>
                         <h3 className="font-bold text-red-800 mb-1 group-hover:text-amber-600 transition-colors duration-300">
@@ -228,8 +228,8 @@ export default function ContactPage() {
                         value={formData.message}
                         onChange={handleChange}
                         required
-                        rows={5}
-                        className="border-amber-200 focus:border-red-500 focus:ring-red-500 transition-all duration-300"
+                        rows={6}
+                        className="border-amber-200 focus:border-red-500 focus:ring-red-500 min-h-[220px] resize-y transition-all duration-300"
                         placeholder="Tell us about your event, date, number of guests, and any specific requirements..."
                       />
                     </div>
@@ -255,22 +255,28 @@ export default function ContactPage() {
           <h2 className="text-3xl font-bold text-center text-amber-300 mb-8">
             Find Us
           </h2>
-          <Card className="overflow-hidden shadow-2xl border-0 hover:shadow-3xl transition-all duration-500">
-            <div className="aspect-video bg-gradient-to-br from-amber-200 to-red-200 flex items-center justify-center">
-              <div className="text-center text-red-800">
-                <MapPin className="w-16 h-16 mx-auto mb-4" />
-                <h3 className="text-2xl font-bold mb-2">
-                  Meher Ali Tent & Pakwan Center
-                </h3>
-                <p className="text-lg">
-                  Near 15 Yadgar Chowk, Chakwal, Pakistan
-                </p>
-                <p className="text-sm mt-2 opacity-75">
-                  Interactive map integration available
-                </p>
-              </div>
+
+          <Card className="pt-0 pb-0 overflow-hidden shadow-2xl border-0 hover:shadow-3xl transition-all duration-500">
+            <div className="aspect-video w-full">
+              <iframe
+                title="Meher Ali Tent & Pakwan Center Location"
+                src="https://www.google.com/maps?q=Meher+Ali+Tent+%26+Pakwan+Center,+Chakwal&z=17&output=embed"
+                className="w-full h-full border-0"
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+              />
             </div>
           </Card>
+          <div className="text-center mt-8">
+            <a
+              href="https://maps.app.goo.gl/PxymUqYtuc9hfaAA9"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 text-amber-300 hover:text-amber-200 text-lg font-semibold"
+            >
+              📍 Open in Google Maps
+            </a>
+          </div>
         </div>
       </section>
     </div>
