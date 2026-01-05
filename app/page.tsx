@@ -155,7 +155,7 @@ export default function HomePage() {
                 title: "Religious Ceremony",
                 description:
                   "Traditional setup for religious gathering with proper arrangements",
-                image: "/religious-project-1.png",
+                image: "/religious-decoration.webp",
                 category: "Religious",
               },
             ].map((project, index) => (

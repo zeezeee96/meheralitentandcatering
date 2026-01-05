@@ -80,7 +80,7 @@ export default function ServicesPage() {
         "Birthday parties",
         "Religious ceremonies",
       ],
-      image: "/placeholder-jo14l.png",
+      image: "/complete-event.jpg",
     },
   ];
 
